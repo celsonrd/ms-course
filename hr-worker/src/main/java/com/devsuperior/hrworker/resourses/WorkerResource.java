@@ -36,6 +36,12 @@ public class WorkerResource {
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable Long id){
 		
+//		int x = 10;
+//		
+//		if (x == 1) {
+//			throw new RuntimeException("Erro critico");
+//		}
+		
 		logger.info("PORT = " + env.getProperty("local.server.port"));
 		
 		Worker worker = repository.findById(id).get();
