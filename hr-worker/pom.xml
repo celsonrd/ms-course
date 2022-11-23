@@ -14,6 +14,8 @@
 	<name>hr-worker</name>
 	<description>Worker Microservice</description>
 
+
+
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>Hoxton.SR12</spring-cloud.version>
