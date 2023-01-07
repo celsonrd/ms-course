@@ -1,5 +1,7 @@
 package com.devsuperior.hruser;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +11,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @SpringBootApplication
 public class HrUserApplication implements CommandLineRunner{
 
+	private static Logger logger = LoggerFactory.getLogger(HrUserApplication.class);
+	
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
 	
@@ -18,7 +22,8 @@ public class HrUserApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		//System.out.println("BCRYPT = " + passwordEncoder.encode("123456"));
+		System.out.println("SUCESSO :> | Chave BCRYPT = " + passwordEncoder.encode("Estuda que muda"));
+		//logger.info("SUCESSO :> | Chave BCRYPT = " + passwordEncoder.encode("Estuda que muda"));
 	}
 
 }
