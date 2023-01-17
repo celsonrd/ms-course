@@ -22,7 +22,7 @@ public class HrUserApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("SUCESSO :> | Chave BCRYPT = " + passwordEncoder.encode("Estuda que muda"));
+		//System.out.println("SUCESSO :> | Chave BCRYPT = " + passwordEncoder.encode("Estuda que muda"));
 		//logger.info("SUCESSO :> | Chave BCRYPT = " + passwordEncoder.encode("Estuda que muda"));
 	}
 
